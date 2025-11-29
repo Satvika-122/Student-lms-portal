@@ -80,23 +80,6 @@ This project is ideal for students learning **React**, **frontend development**,
 
 Each lesson contains **2–3 paragraphs of detailed explanation**.
 
----
-
-## 🖼 Screenshots
-
-You can add these screenshots here:
-
-### Dashboard  
-`/screenshots/dashboard.png`
-
-### Course Details  
-`/screenshots/course-details.png`
-
-### Lesson Page  
-`/screenshots/lesson-reader.png`
-
-Create this folder later:
-
 
 ---
 
