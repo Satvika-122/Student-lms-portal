@@ -1,0 +1,298 @@
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #252a3f;
+}
+
+.profile-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.edit-profile-btn,
+.save-profile-btn,
+.cancel-profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+
+.edit-profile-btn {
+  background: linear-gradient(135deg, #6a82fb 0%, #8b5cf6 100%);
+  color: #fff;
+}
+
+.edit-profile-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(106, 130, 251, 0.4);
+}
+
+.profile-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.save-profile-btn {
+  background: linear-gradient(135deg, #6a82fb 0%, #8b5cf6 100%);
+  color: #fff;
+}
+
+.save-profile-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(106, 130, 251, 0.4);
+}
+
+.cancel-profile-btn {
+  background: #1e2338;
+  color: #b8c5e0;
+  border: 1px solid #252a3f;
+}
+
+.cancel-profile-btn:hover {
+  background: #252a3f;
+  color: #fff;
+}
+
+.profile-message {
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.profile-message.message-success {
+  background: rgba(51, 204, 51, 0.2);
+  color: #51cf66;
+  border: 1px solid rgba(51, 204, 51, 0.3);
+}
+
+.profile-message.message-error {
+  background: rgba(204, 51, 51, 0.2);
+  color: #ff6b6b;
+  border: 1px solid rgba(204, 51, 51, 0.3);
+}
+
+.profile-section {
+  margin-bottom: 40px;
+  padding: 32px;
+  background: #1a1f2e;
+  border-radius: 16px;
+  border: 1px solid #252a3f;
+}
+
+.profile-section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile-field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #b8c5e0;
+}
+
+.profile-value {
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 12px 16px;
+  background: #151b2d;
+  border-radius: 8px;
+  border: 1px solid #252a3f;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-input,
+.profile-textarea {
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid #252a3f;
+  border-radius: 8px;
+  background: #151b2d;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.profile-input:focus,
+.profile-textarea:focus {
+  outline: none;
+  border-color: #6a82fb;
+  box-shadow: 0 0 0 3px rgba(106, 130, 251, 0.2);
+}
+
+.profile-input::placeholder,
+.profile-textarea::placeholder {
+  color: #6a7a9a;
+}
+
+.profile-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.profile-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.profile-course-card {
+  background: #151b2d;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #252a3f;
+}
+
+.profile-course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(106, 130, 251, 0.2);
+  border-color: #6a82fb;
+}
+
+.profile-course-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.profile-course-info {
+  padding: 16px;
+}
+
+.profile-course-info h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 12px 0;
+}
+
+.profile-review-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.star-filled {
+  color: #ffa500;
+  fill: #ffa500;
+}
+
+.star-empty {
+  color: #666;
+}
+
+.rating-value {
+  margin-left: 8px;
+  font-weight: 600;
+  color: #b8c5e0;
+  font-size: 0.9rem;
+}
+
+.profile-review-comment {
+  font-size: 0.9rem;
+  color: #b8c5e0;
+  margin: 0 0 8px 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.profile-review-date {
+  font-size: 0.85rem;
+  color: #6a7a9a;
+}
+
+.profile-course-progress {
+  margin-top: 12px;
+}
+
+.profile-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #1e2338;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.profile-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6a82fb 0%, #8b5cf6 100%);
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+.profile-progress-text {
+  font-size: 0.85rem;
+  color: #b8c5e0;
+}
+
+.profile-empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #b8c5e0;
+  font-size: 1rem;
+}
+
+.profile-empty-state p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .profile-details {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-section {
+    padding: 24px;
+  }
+}
